@@ -29,14 +29,21 @@ Targets Julia 1.6 and up.
 
 ## Install
 
-Until this lands in the General registry, add by path:
+Once it lands in the General registry:
 
 ```julia
 using Pkg
-Pkg.develop(path="/path/to/Shaber-Julia")
+Pkg.add("Shaber")
 ```
 
-Or, from inside the cloned repo:
+While that's in flight, install straight from GitHub:
+
+```julia
+using Pkg
+Pkg.add(url="https://github.com/codestlover/Shaber-Julia")
+```
+
+Or, from inside a cloned working copy:
 
 ```bash
 julia --project=. -e 'using Pkg; Pkg.instantiate()'
