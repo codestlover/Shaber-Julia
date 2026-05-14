@@ -1,0 +1,6 @@
+/Manifest.toml
+/docs/build/
+/deps/build.log
+*.cov
+*.jl.cov
+*.jl.*.cov
